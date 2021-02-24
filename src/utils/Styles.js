@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'green',
     borderRadius: 10,
+    margin: 10,
   },
   btnTextStyle: {
     fontSize: 20,

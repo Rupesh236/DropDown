@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Boarding from './src/screens/onBoarding';
 import SelectedScreen from './src/screens/selectionScreen';
+import DiscriptionView from './src/screens/discriptionView';
 
 const stack = createStackNavigator();
 class App extends Component {
@@ -23,6 +24,16 @@ class App extends Component {
           <stack.Screen
             name="SelectedScreen"
             component={SelectedScreen}
+            options={{
+              title: 'Options',
+              // headerStyle: {
+              //   justifyContent: 'center',
+              // },
+            }}
+          />
+          <stack.Screen
+            name="DiscriptionView"
+            component={DiscriptionView}
             options={{
               title: 'Options',
               // headerStyle: {

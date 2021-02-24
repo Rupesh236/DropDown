@@ -1,16 +1,24 @@
 import React, {Component} from 'react';
 import {View, TouchableOpacity, Text, StyleSheet} from 'react-native';
-import {styles} from '../utils/Styles';
+import {styles} from '../utils/styles';
 
 class Boarding extends Component {
   render() {
-    const goToNext = () => {
+    const goToDropDown = () => {
       this.props.navigation.navigate('SelectedScreen');
     };
+
+    const goToList = () => {
+      this.props.navigation.navigate('DiscriptionView');
+    };
+
     return (
       <View style={Styles.container}>
-        <TouchableOpacity style={styles.btnStyle} onPress={goToNext}>
-          <Text style={styles.btnTextStyle}>Go To Next</Text>
+        <TouchableOpacity style={styles.btnStyle} onPress={goToDropDown}>
+          <Text style={styles.btnTextStyle}>Go To Dropdown</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.btnStyle} onPress={goToList}>
+          <Text style={styles.btnTextStyle}>Go To List</Text>
         </TouchableOpacity>
       </View>
     );

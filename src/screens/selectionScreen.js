@@ -6,7 +6,7 @@ import {
   TextInput,
   StyleSheet,
 } from 'react-native';
-import {styles} from '../utils/Styles';
+import {styles} from '../utils/styles';
 import {Dropdown} from '@mopinion-mobile/react-native-material-dropdown';
 
 class SelectedScreen extends Component {
